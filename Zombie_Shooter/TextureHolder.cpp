@@ -18,8 +18,8 @@ Texture& TextureHolder::GetTexture(string const& filename)
     // using the passed in file name
     auto keyValuePair = m.find(filename);
     // auto is equivalent of map<string, Texture>::iterator
-    
-        
+
+
     // Did we find a match?
     if (keyValuePair != m.end())
     {
@@ -38,4 +38,4 @@ Texture& TextureHolder::GetTexture(string const& filename)
         // Return the texture to the calling code
         return texture;
     }
-} 
+}

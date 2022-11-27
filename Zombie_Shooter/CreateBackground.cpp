@@ -1,5 +1,4 @@
 #include "ZombieArena.h"
-
 int createBackground(VertexArray& rVA, IntRect arena)
 {
     // Anything we do to rVA we are really doing
@@ -37,7 +36,6 @@ int createBackground(VertexArray& rVA, IntRect arena)
                 Vector2f((w * TILE_SIZE), (h * TILE_SIZE)
                     + TILE_SIZE);
 
-
             // Define the position in the Texture for current quad
             // Either grass, stone, bush or wall
             if (h == 0 || h == worldHeight - 1 ||
@@ -58,7 +56,7 @@ int createBackground(VertexArray& rVA, IntRect arena)
                 rVA[currentVertex + 3].texCoords =
                     Vector2f(0, TILE_SIZE +
                         TILE_TYPES * TILE_SIZE);
-            }
+            }      
             else
             {
                 // Use a random floor texture
@@ -78,10 +76,9 @@ int createBackground(VertexArray& rVA, IntRect arena)
                     Vector2f(0, TILE_SIZE + verticalOffset);
             }
 
-            // Position ready for the next four vertices
+            // Position ready for the next for vertices
             currentVertex = currentVertex + VERTS_IN_QUAD;
         }
     }
-
     return TILE_SIZE;
 }

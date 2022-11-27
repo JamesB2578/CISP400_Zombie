@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 using namespace sf;
+
 class Zombie
 {
 private:
@@ -25,10 +26,10 @@ private:
     float m_Health;
     // Is it still alive?
     bool m_Alive;
-    
-    // Public prototypes go here
-    public:
-    
+
+    // Public prototypes go here    
+public:
+
     // Handle when a bullet hits a zombie
     bool hit();
     // Find out if the zombie is alive

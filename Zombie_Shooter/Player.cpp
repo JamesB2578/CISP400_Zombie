@@ -198,3 +198,10 @@ void Player::increaseHealthLevel(int amount)
 		m_Health = m_MaxHealth;
 	}
 }
+
+void Player::resetPlayerStats()
+{
+	m_Speed = START_SPEED;
+	m_Health = START_HEALTH;
+	m_MaxHealth = START_HEALTH;
+}

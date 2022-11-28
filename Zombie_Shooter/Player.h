@@ -105,6 +105,8 @@ public:
 	// Increase the maximum amount of health the player can have
 	void increaseHealthLevel(int amount);
 
+	void resetPlayerStats();
+
 	
 };
 
